@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Password</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/rdmPass.js"></script>
+    <script src="js/clock.js">
+       
+    </script>
+</head>
+
+<body onload="clockf()">
+    <div class="container">
+
+        <form action="" name="frm">
+            <!--         <div class="row">-->
+
+            <div class="col-sm-12">
+                <input type="text" name="rdmPassTxt" class="out" value="Pass" disabled>
+                <input type="button" class="btn btn-block" name="btnPassGen" onclick="pform(this.form.lengthtxt.value)"
+                    value="Generate">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <strong class="lblPass">Enter Password Length:</strong>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" name="lengthtxt" size="3" value="5" class="in">
+                    </div>
+                </div>
+                <div class="row clock-block" id="clockid">
+
+                    <div class="sol-sm-6">
+                        <h2 class="cl-lbl">Time is:</h2>
+                    </div>
+                    <div class="col-sm-6 tblock">
+                        <input type="text" id="txtClock1" size="2"  class="txtClock" disabled><span>:</span>
+                        <input type="text" id="txtClock2" size="2"  class="txtClock" disabled><span>:</span>
+                        <input type="text" id="txtClock3" size="2"  class="txtClock" disabled>
+                    </div>
+<div id="cl">
+    
+</div>
+                    <!--
+                         <div class="col-sm-10">
+                              <input type="text" name="txtClock" size="3" value="5" class="txtClock">
+                         </div>
+                        <div class="col-sm-10">
+                              <input type="text" name="txtClock" size="3" value="5" class="txtClock">
+                         </div>
+-->
+                </div>
+            </div>
+
+            <!--         </div>-->
+        </form>
+    </div>
+</body>
+
+</html>
